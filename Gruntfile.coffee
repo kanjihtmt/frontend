@@ -1,6 +1,15 @@
 module.exports = (grunt) ->
   pkg = grunt.file.readJSON 'package.json'
   grunt.initConfig
+    haml:
+      dist:
+        files: [
+          expand: true,
+          cwd: 'haml',
+          src: '*.haml',
+          dest: '.',
+          ext: '.html'
+        ]
     sass:
       dist:
         options:
