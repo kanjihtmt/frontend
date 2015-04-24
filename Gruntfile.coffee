@@ -60,6 +60,7 @@ module.exports = (grunt) ->
           'coffee'
           'simplemocha'
         ]
+
   for t of pkg.devDependencies
     if t.substring(0, 6) is 'grunt-'
       grunt.loadNpmTasks t
