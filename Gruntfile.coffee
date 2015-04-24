@@ -23,10 +23,10 @@ module.exports = (grunt) ->
         ]
     watch:
       css:
-        files: '**/*.scss',
+        files: 'sass/*.scss'
         tasks: ['sass']
       haml:
-        files: '**/*.haml',
+        files: 'haml/*.haml'
         tasks: ['haml']
 
   for t of pkg.devDependencies
